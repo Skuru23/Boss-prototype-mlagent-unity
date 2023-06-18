@@ -1,0 +1,65 @@
+{
+    "MoveAgent": {
+        "checkpoints": [
+            {
+                "steps": 9089,
+                "file_path": "results\\testMove\\MoveAgent\\MoveAgent-9089.onnx",
+                "reward": null,
+                "creation_time": 1684208959.3895204,
+                "auxillary_file_paths": [
+                    "results\\testMove\\MoveAgent\\MoveAgent-9089.pt"
+                ]
+            },
+            {
+                "steps": 11841,
+                "file_path": "results\\testMove\\MoveAgent\\MoveAgent-11841.onnx",
+                "reward": null,
+                "creation_time": 1684209028.2162018,
+                "auxillary_file_paths": [
+                    "results\\testMove\\MoveAgent\\MoveAgent-11841.pt"
+                ]
+            },
+            {
+                "steps": 14017,
+                "file_path": "results\\testMove\\MoveAgent\\MoveAgent-14017.onnx",
+                "reward": null,
+                "creation_time": 1684209201.0167146,
+                "auxillary_file_paths": [
+                    "results\\testMove\\MoveAgent\\MoveAgent-14017.pt"
+                ]
+            },
+            {
+                "steps": 15233,
+                "file_path": "results\\testMove\\MoveAgent\\MoveAgent-15233.onnx",
+                "reward": null,
+                "creation_time": 1684209411.0008943,
+                "auxillary_file_paths": [
+                    "results\\testMove\\MoveAgent\\MoveAgent-15233.pt"
+                ]
+            },
+            {
+                "steps": 23123,
+                "file_path": "results\\testMove\\MoveAgent\\MoveAgent-23123.onnx",
+                "reward": 0.12403100775193798,
+                "creation_time": 1684210616.9226441,
+                "auxillary_file_paths": [
+                    "results\\testMove\\MoveAgent\\MoveAgent-23123.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 23123,
+            "file_path": "results\\testMove\\MoveAgent.onnx",
+            "reward": 0.12403100775193798,
+            "creation_time": 1684210616.9226441,
+            "auxillary_file_paths": [
+                "results\\testMove\\MoveAgent\\MoveAgent-23123.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}
