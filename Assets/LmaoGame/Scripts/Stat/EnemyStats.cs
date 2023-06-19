@@ -9,7 +9,8 @@ namespace SG
         public int health = 10;
         public int maxHealth;
         public int currentHealth;
-
+        public bool canAttacked;
+        public HealthBar healthBar;
         Animator animator;
 
         private void Awake()
@@ -21,6 +22,8 @@ namespace SG
         {
             maxHealth = SetMaxHelthFromHealthLevel();
             currentHealth = maxHealth;
+            canAttacked = true;
+            healthBar.SetMaxHealth(maxHealth);
         }
 
         public int SetMaxHelthFromHealthLevel()
@@ -35,11 +38,14 @@ namespace SG
 
             animator.Play("Dmg_01");
 
+            healthBar.SetCurrentValue(currentHealth);
+
             if(currentHealth <=0)
-            {
+            {   
+                canAttacked = false;
                 currentHealth = 0;
                 animator.Play("Death");
-                
+                healthBar.Disable();
             }
         }
     }
